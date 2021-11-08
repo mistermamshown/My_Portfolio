@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="my_bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
+    <title>Home page</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid navContainer">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <div class=" navbar-brand">
+                    <h2 class="text-success">Mymsalabusiness</h2>
+                </div>
+                <button data-toggle="collapse" data-target="#myToggler" class="navbar-toggler">
+                    <span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="myToggler">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active" style="color: #bebaba">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                style="color: #bebaba;">Services</a>
+
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">-Wed Development</a>
+                                <a href="#" class="dropdown-item">-Wed Designing</a>
+                                <a href="#" class="dropdown-item">-Responsive Designing</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item disabled text-success">
+                                    -Height Qualilty Content</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a href="portfolio.html" class="nav-link " style="color: #bebaba">Portfolio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link" style="color: #bebaba">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link" style="color: #bebaba">Contact Us</a>
+                        </li>
+
+
+                    </ul>
+            </nav>
+        </div>
+        <div class="container-fluid p-4" style="background-color:#d1e0db;
+        border: 15px solid #34495e;;">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center">
+                    <h4>Quality-Support-Value </h4>
+                    <h2 class="text-success">Best Services</h2>
+                    <h5>Are you looking to hire a 'good'
+                        Developer to grow your company? Well, let me tell you. You are in
+                        the right place...</h5>
+                    <form action="contact.html">
+                        <button class="btn btn-success" type="submit">Contact</button>
+                    </form>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <img src="images/therealcode.PNG" class="img-fluid" alt="My photo" style="border-radius: 20px;">
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <section>
+
+
+
+        <div class="container text-center text-success p-5 mt-5 myHeading">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Track my working hours</h1>
+                </div>
+            </div>
+        </div>
+
+        <section>
+
+            <div class="container mt-5">
+                <div class="row justify-content-end">
+                    <div class="col-4 myPrice">
+                        <div class="">
+                            <h5 class="text-center">Include your price</h5>
+                            <form class="text-center" action="#">$
+                                <input type="number" name="price" style="width: 70px;" id="priceInput" class="myForm">
+                                /hour
+                                <button class="btn btn-danger my-btn" type="button" onclick="myPrice()">
+                                    Activate </button>
+                            </form>
+                            <h5 id="myPrice" class="text-center"></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row  myData ">
+                    <div class="col-md-3  ">
+                        <h5 id="days">Total days:0</h5>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 id="hours">Total hours:0</h5>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 id="totalPrice">Total price:0</h5>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 id="average">Average: 0</h5>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-5 myPrice" style="padding: 30px;">
+                        <h5>Just input your daily working hours in the form
+                            below and see the result in a more dynamic way.</h5>
+                        <form class="text-center">
+                            <input type="number" name="price" style="width: 80px; font-size:30px" id="hourInput"
+                                class="myForm">
+                            <button class="btn btn-success my-btn" type="button" name="mybtn"
+                                onclick="myFunction()">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1 ">
+                        <div id="myDays" class="myScrol">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row justify-content-center mt-5 mb-5">
+                    <div class="col-md-2  myBrand ">
+                        <img src="images/mybrand.jpg" alt="my pic" class="img-fluid">
+                        <h6 class="text-center text-success">Msalabusiness</h6>
+
+                    </div>
+                    <div class="col-md-2  myBrand ">
+                        <img src="images/mybranding.jpg" alt="my pic" class="img-fluid">
+                    </div>
+                    <div class="col-md-2  myBrand ">
+                        <img src="images/thebranding.jpg" alt="my pic" class="img-fluid">
+                    </div>
+                    <div class="col-md-2  myBrand ">
+                        <img src="images/mybtanding.jpg" alt="my pic" class="img-fluid">
+                        <h6 class="text-center text-success">Le programmeur</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="full-footer">
+            <div class="container-fluid">
+                <div class="row p-2 pt-3 pb-3 pb-sm-0">
+                    <div class="col-md-3">
+                        <h3 class="text-success"> Msalabusiness</h3>
+
+                        <p style="color: #bebaba" class="pb-0"> <span class="msala"> Mymsalabusiness</span>
+                            is a talanted <br> web developer
+                            who loves to create <br> awsome web pages with a nice looking <br>
+                            UI, using the latest technologies <br> within the deadline...
+                        </p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h3 class="text-success"> Important Links</h3>
+                        <a href="#" style="color:#bebaba">Privacy</a><br>
+                        <a href="#" style="color: #bebaba">YouTube Channel Link</a><br>
+                        <a href="#" style="color: #bebaba">Social Media Link</a><br>
+                        <a href="#" style="color: #bebaba">Facebook Page Link</a>
+
+                    </div>
+
+                    <div class="col-md-3">
+                        <h3 class="text-success"> Our Services</h3>
+                        <p style="color: #bebaba">
+                            - Web Development <br>
+                            - Web Designing <br>
+                            - Responsive Designing <br>
+                            - Height Qualilty Content <br>
+                        </p>
+                    </div>
+
+                    <div class="col-md">
+
+                        <h3 class="text-success"> Contact Us</h3>
+                        <a href="mailto:mymsalabusiness@gmail.com">
+                            <i class="fas fa-envelope"></i> mymsalabusiness@gmail.com</a><br>
+                        <a href="tel:+237694346535"> <i class="fas fa-phone"></i> +237694346535</a>
+                        <div class="pt-1">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126631.82241161707!2d13.50586594090859!3d7.326417553167498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10efe2254719ac6b%3A0xa907c3abd1a34b31!2zTmdhb3VuZMOpcsOp!5e0!3m2!1sfr!2scm!4v1635753927007!5m2!1sfr!2scm"
+                                    frameborder="0">
+                                </iframe>
+                            </div>
+
+                        </div>
+                    </div>
+                </div> <hr>
+                <div class="row pb-15">
+                    <div class="col-md-12 text-center">
+                        <a href="https://www.instagram.com/theceoprogrammers/" target="_blank">
+                            <i class="fab  fa-instagram" style="font-size: 26px;"></i></a>
+                        <a href="https://youtu.be/cSzJcm8o4Qc" target="_blank">
+                            <i class="fab fa-youtube" style="font-size: 26px;"></i></a>
+                        <a href="https://www.linkedin.com/in/sala-ouldini-mohamadou-212869223/" target="_blank">
+                            <i class="fab  fa-linkedin" style="font-size: 26px;"></i></a>
+                        <a href="https://github.com/mistermamshown" target="_blank"><i class="fab fa-github"
+                                style="font-size: 26px;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <script>
+                var priceInput = 0
+                function myPrice() {
+                    priceInput = document.getElementById("priceInput").value;
+                    if (priceInput) {
+                        document.getElementById("myPrice").style.display = "block"
+                        document.getElementById("myPrice").innerHTML = "$" + priceInput + "/hour"
+                    }
+                }
+                var days = 0;
+                var hours = 0;
+                var price = 0;
+                function myFunction() {
+                    var newDay = document.createElement("h6");
+                    var myDiv = document.getElementById("myDays");
+                    myDiv.appendChild(newDay);
+
+
+                    var inputHour = document.getElementById("hourInput").value;
+                    if (inputHour >= 0 && inputHour != "") {
+                        days++
+                        hours += Number(inputHour);
+                        var average = hours / days;
+                        var x = document.createTextNode("Day" + days + ": " + inputHour + "hrs");
+                        newDay.appendChild(x)
+
+
+                        if (priceInput) {
+                            price = Number(hours) * Number(priceInput)
+                        }
+
+
+                        document.getElementById("days").innerHTML = "Tatal days: " + days;
+                        document.getElementById("hours").innerHTML = "Total hours: " + hours;
+                        document.getElementById("totalPrice").innerHTML = "Total price: $" + price;
+                        document.getElementById("average").innerHTML = "Average: " + average.toFixed(1) + "h/d";
+                    }
+                }
+
+            </script>
+
+            <script src="bootstrapjquery.js"></script>
+            <script src="bootstrapproperjs.js"></script>
+</body>
+
+</html>

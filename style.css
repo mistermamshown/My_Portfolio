@@ -1,0 +1,127 @@
+/*Start Header*/
+/*Start Nav*/
+
+.navContainer{
+    background-color:  #34495e;
+    padding: 0;
+}
+
+.navContainer li a {
+    font-weight:600 ;
+    font-size: 1.1rem;    
+}
+
+
+/*End Nav*/
+
+.myHeading {
+    background-color:  #d1e0db;
+    border-radius: 10px;
+
+}
+
+.contactMain {
+    padding: 50px 10px;
+}
+
+.contactInfo{
+    border-radius: 10px;
+    background-color:  #d1e0db;
+    padding: 110px 0px;
+
+}
+
+.contactInfo a {
+    color: black;
+}
+
+.contactForm{
+    background-color: #d1e0db;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+
+
+}
+/*End Header*/
+
+.myPrice{
+    background-color: #d1e0db;
+    padding: 4px;
+    border-radius: 23px;
+    font-size: 20px;
+    
+}
+
+#myPrice{
+    display: none;
+}
+
+#myDays{
+    overflow-y:scroll;
+    height: 280px;
+    width: 120px;
+}
+
+.myData{
+    background-color: #d1e0db;
+    margin: 30px;
+    border-radius: 20px;
+
+}
+
+.myForm{
+    border-radius: 10px;    
+}
+.my-btn {
+    width: 75px;
+    border-radius: 20px;
+
+}
+
+.aboutMe {
+    padding: 15px;
+    margin: 20px;
+    
+}
+
+.myBrand{
+    border: 2px solid green;
+    background-color: #d1e0db;
+    margin: 20px;
+    border-radius: 30px;
+
+}
+
+.mobileVersion div{
+    background-color: greenyellow;
+}
+
+/*Start Footer*/
+
+.full-footer {
+    background-color:  #34495e;
+    padding: 0;
+    padding-bottom: 15px;
+}
+
+.full-footer a  {
+    font-size: 1.1rem;
+    color:#bebaba;
+}
+
+.dropdown-menu .text-success {
+    background-color:  #d1e0db;
+
+}
+.socialIcon a {
+    font-size: 26px;
+}
+
+.msala {
+    color: #13b813;
+    font-weight: 600;
+}
+
+/*End Footer*/
+
