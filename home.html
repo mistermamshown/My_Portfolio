@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
     <title>Home page</title>
 </head>
+<style>
+    .myMaps{
+        background-color: #d1e0db;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 10px;
+        border-radius: 25px;
+    }
+</style>
 
 <body>
     <header>
@@ -88,6 +97,7 @@
                 </div>
             </div>
         </div>
+        </section>
 
         <section>
 
@@ -132,10 +142,22 @@
                         </form>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-1 ">
-                        <div id="myDays" class="myScrol">
+                <div class="row myRow">
+                    <div class="col-md-5 ">
+                        <div id="myDays" class="myScrol ">
                         </div>
+                    </div>
+                    <div class="col-md-5  myMaps">
+                        <h4 class="text-center"> <i class="fas fa-map-marker-alt"></i>
+                            <span class="text-success">Our Position</span> </h4>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126631.82241161707!2d13.50586594090859!3d7.326417553167498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10efe2254719ac6b%3A0xa907c3abd1a34b31!2zTmdhb3VuZMOpcsOp!5e0!3m2!1sfr!2scm!4v1635753927007!5m2!1sfr!2scm"
+                                frameborder="0">
+                            </iframe>
+                        </div>
+
+
                     </div>
                 </div>
                 <hr>
