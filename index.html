@@ -103,7 +103,7 @@
 
             <div class="container mt-5">
                 <div class="row justify-content-end">
-                    <div class="col-4 myPrice">
+                    <div class="col-4 myPrice mr-3 ">
                         <div class="">
                             <h5 class="text-center">Include your price</h5>
                             <form class="text-center" action="#">$
@@ -144,7 +144,7 @@
                 </div>
                 <div class="row myRow">
                     <div class="col-md-5 ">
-                        <div id="myDays" class="myScrol ">
+                        <div id="myDays" class="myScrol "  style="background-color:#34495e; display: none;">
                         </div>
                     </div>
                     <div class="col-md-5  myMaps">
@@ -265,6 +265,7 @@
 
                     var inputHour = document.getElementById("hourInput").value;
                     if (inputHour >= 0 && inputHour != "") {
+                    document.getElementById("myDays").style.display = "block"
                         days++
                         hours += Number(inputHour);
                         var average = hours / days;
